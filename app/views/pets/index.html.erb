@@ -1,0 +1,15 @@
+<h1 class="text-center">Lost Pets</h1>
+<h3 class="text-center"><%= link_to "Add a new lost pet", new_pet_path %></h3>
+<div class="container">
+  <div class="row">
+
+<% @pets.each do |pet| %>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+<h3><%= link_to "Name: #{pet.name}", pet_path(pet) %></h3>
+<p><%= "Species: #{pet.species}" %></p>
+<p><%= "Last seen on: #{pet.last_seen_on}" %></p>
+<p><%= "Last seen at: #{pet.last_seen_at}" %></p>
+</div>
+<% end %>
+</div>
+</div>

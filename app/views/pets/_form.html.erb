@@ -1,0 +1,17 @@
+<%= form_for(@pet) do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :last_seen_on %>
+<%= f.text_field :last_seen_on %>
+
+<%= f.label :last_seen_at %>
+<%= f.text_field :last_seen_at %>
+<%= f.submit class: "btn btn-primary"%>
+<% end %>
+
+

@@ -1,0 +1,16 @@
+<h3 class="text-center"><%= "Name: #{@pet.name}" %></h3>
+
+<div class="container text-center">
+<p><%= "Species: #{@pet.species}" %></p>
+<p><%= "Last seen on: #{@pet.last_seen_on}" %></p>
+<p><%= "Last seen at: #{@pet.last_seen_at}" %></p>
+
+
+
+<button class="btn btn-primary" type="button"><%= link_to "back", pets_path %></button>
+<p><%= link_to "edit", edit_pet_path %></p>
+
+<p><%= link_to "delete", pet_path(@pet), method: :delete %></p>
+</div>
+
+<a href="/" class="btn btn-primary">back</a>
